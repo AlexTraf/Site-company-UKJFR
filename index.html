@@ -1,0 +1,519 @@
+<html lang="ru"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ООО УКЖФР — Аренда нежилых помещений в посёлке Разумное</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo-block">
+        <div class="logo-icon">🏢</div>
+        <div>
+          <div class="logo-title">ООО «УКЖФР»</div>
+          <div class="logo-sub">Управление нежилыми зданиями и аренда коммерческих помещений</div>
+        </div>
+      </div>
+      <div class="header-contacts">
+        <span>📍 Белгородская обл., Белгородский р-н, п. Разумное</span>
+        <span>📞 +7 (4722) 00-00-00</span>
+        <span>✉ info@ukzhfr.ru</span>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="nav-inner">
+      <button class="nav-btn active" onclick="showPage('home')">Главная</button>
+      <button class="nav-btn" onclick="showPage('news')">Новости</button>
+      <button class="nav-btn" onclick="showPage('services')">Услуги</button>
+      <button class="nav-btn" onclick="showPage('proposals')">Предложения</button>
+      <button class="nav-btn" onclick="showPage('gallery')">Фотогалерея</button>
+      <button class="nav-btn" onclick="showPage('shop')">Аренда помещений</button>
+      <button class="nav-btn" onclick="showPage('land')">Земельный участок</button>
+      <button class="nav-btn" onclick="showPage('other')">Прочие услуги</button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ===== ГЛАВНАЯ ===== -->
+    <section id="home" class="page active">
+      <div class="hero">
+        <div class="hero-content">
+          <div class="hero-badge">Посёлок Разумное, Белгородская область</div>
+          <h1>Аренда коммерческих<br>помещений и офисов</h1>
+          <p>Управляем нежилыми зданиями и сдаём в аренду офисы. Также предоставляем в аренду земельные участки производственного назначения</p>
+          <div class="hero-btns">
+            <button class="btn-primary" onclick="showPage('shop')">Смотреть помещения</button>
+            <button class="btn-ghost" onclick="showPage('proposals')">Спецпредложения</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <!-- Быстрые категории -->
+        <div class="quick-cats">
+          <div class="qcat" onclick="showPage('shop')">
+            <div class="qcat-icon">🏢</div>
+            <div class="qcat-name">Офисы</div>
+            <div class="qcat-count">от 20 м²</div>
+          </div>
+          <div class="qcat qcat-disabled">
+            <div class="qcat-icon">🏪</div>
+            <div class="qcat-name">Торговые площади</div>
+            <div class="qcat-count">В разработке</div>
+          </div>
+          <div class="qcat" onclick="showPage('land')">
+            <div class="qcat-icon">🏔</div>
+            <div class="qcat-name">Земельный участок</div>
+            <div class="qcat-count">производственное назначение</div>
+          </div>
+        </div>
+
+        <!-- О компании -->
+        <div class="about-block">
+          <h2 class="section-title">О компании</h2>
+          <div class="about-grid about-grid-single">
+            <div class="about-text">
+              <p><strong>ООО «УКЖФР»</strong> — управляющая компания с многолетним опытом в сфере коммерческой недвижимости. Мы управляем нежилыми зданиями и земельными участками производственного назначения.</p>
+              <p>Предоставляем в аренду офисные помещения, а также земельный участок производственного назначения. Наш подход индивидуальный, наш приоритет — ваш комфорт и стабильность бизнеса.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Расположение -->
+        <div class="location-block">
+          <h2 class="section-title">Расположение</h2>
+          <div class="location-cards">
+            <div class="loc-card">
+              <div class="loc-icon">🗺</div>
+              <div class="loc-name">Белгородская область</div>
+            </div>
+            <div class="loc-card">
+              <div class="loc-icon">📌</div>
+              <div class="loc-name">Белгородский район</div>
+            </div>
+            <div class="loc-card">
+              <div class="loc-icon">🏘</div>
+              <div class="loc-name">Посёлок Разумное</div>
+            </div>
+          </div>
+          <p class="location-note">✅ Удобная транспортная доступность · Парковка на территории · 15 минут от центра Белгорода</p>
+        </div>
+
+        <!-- Преимущества -->
+        <div class="features-block">
+          <h2 class="section-title">Почему выбирают нас</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">💰</div>
+              <h3>Гибкие условия аренды</h3>
+              <p>Краткосрочная и долгосрочная аренда. Индивидуальные тарифы для якорных арендаторов и предпринимателей.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🔧</div>
+              <h3>Всё включено</h3>
+              <p>В арендную плату входит эксплуатация и уборка мест общего пользования.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🛠</div>
+              <h3>Техническое обслуживание</h3>
+              <p>Оперативное устранение любых неисправностей в здании.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">📱</div>
+              <h3>Личный кабинет</h3>
+              <p>Онлайн-оплата аренды, счета и акты в электронном виде.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🚚</div>
+              <h3>Парковка и доступ</h3>
+              <p>Имеется парковка для арендаторов и клиентов.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== НОВОСТИ ===== -->
+    <section id="news" class="page">
+      <div class="container">
+        <h2 class="section-title">Новости</h2>
+        <div class="news-grid">
+          <div class="news-card">
+            <div class="news-date">10 апреля 2026</div>
+            <h3>Сдаётся в аренду второй этаж административно-бытового корпуса</h3>
+            <p>Сдаётся в аренду второй этаж административно-бытового корпуса. Приём заявок уже открыт.</p>
+            <a class="news-link" href="#">Читать далее →</a>
+          </div>
+          <div class="news-card">
+            <div class="news-date">3 апреля 2026</div>
+            <h3>Земельные участки производственного назначения — заявки открыты</h3>
+            <p>ООО «УКЖФР» начинает приём заявок на аренду земельных участков производственного назначения. Долгосрочная аренда, все коммуникации на границе участка.</p>
+            <a class="news-link" href="#">Читать далее →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== УСЛУГИ ===== -->
+    <section id="services" class="page">
+      <div class="container">
+        <h2 class="section-title">Услуги</h2>
+        <p class="section-desc">Полный комплекс услуг по управлению нежилой недвижимостью и обеспечению арендаторов</p>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">🏢</div>
+            <h3>Аренда нежилых помещений</h3>
+            <p>Офисы и торговые площади от 20 м² в аренду на любой срок. Гибкие тарифы, быстрое оформление договора.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🔧</div>
+            <h3>Управление зданием</h3>
+            <p>Комплексное управление нежилыми зданиями: эксплуатация инженерных систем, плановое и аварийное техническое обслуживание.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🧹</div>
+            <h3>Клининговые услуги</h3>
+            <p>Согласно условиям договора.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🛡</div>
+            <h3>Охрана и безопасность</h3>
+            <p>В разработке.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🏗</div>
+            <h3>Ремонт и отделка под арендатора</h3>
+            <p>Выполняем отделку помещений под индивидуальные требования арендатора. Сроки, условия согласовываются дополнительно.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🏔</div>
+            <h3>Аренда земельных участков</h3>
+            <p>Земельные участки производственного назначения в долгосрочную аренду. Все необходимые коммуникации на границе участка, удобный въезд для техники.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">⚡</div>
+            <h3>Коммунальное обеспечение</h3>
+            <p>Электроснабжение, водоснабжение, канализация, отопление — всё в рамках единого договора аренды. Отдельные счётчики по запросу.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">📍</div>
+            <h3>Юридический адрес</h3>
+            <p>Получение корреспонденции.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ПРЕДЛОЖЕНИЯ ===== -->
+    <section id="proposals" class="page">
+      <div class="container">
+        <h2 class="section-title">Предложения</h2>
+        <p class="section-desc">Актуальные спецпредложения и акции для новых и действующих арендаторов</p>
+        <div class="proposals-list">
+          <div class="proposal-card featured">
+            <div class="proposal-badge">🔥 Горячее предложение</div>
+            <h3>Первый месяц — бесплатно</h3>
+            <p>При заключении договора аренды офиса на срок от 36 месяцев — первый месяц аренды в подарок.</p>
+            <button class="btn-primary" onclick="showPage('shop')">Выбрать офис</button>
+          </div>
+          <div class="proposal-card">
+            <div class="proposal-badge">🏔 Земля</div>
+            <h3>Земельный участок производственного назначения</h3>
+            <p>Участок в долгосрочную аренду. Электричество, водоснабжение и дорога на границе участка.</p>
+            <div class="proposal-price">По договору</div>
+            <button class="btn-outline" onclick="showPage('land')">Подробнее</button>
+          </div>
+          <div class="proposal-card">
+            <div class="proposal-badge">🏫 Торговля</div>
+            <h3>Торговые площади у входа</h3>
+            <p>В разработке.</p>
+          </div>
+          <div class="proposal-card">
+            <div class="proposal-badge">💼 Офис</div>
+            <h3>Готовый офис «под ключ»</h3>
+            <p>В разработке.</p>
+          </div>
+          <div class="proposal-card">
+            <div class="proposal-badge">📍 Юридический адрес</div>
+            <h3>Юридический адрес для бизнеса</h3>
+            <p>В разработке.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ГАЛЕРЕЯ ===== -->
+    <section id="gallery" class="page">
+      <div class="container">
+        <h2 class="section-title">Фотогалерея</h2>
+        <p class="section-desc">Наши здания, помещения и инфраструктура</p>
+        <div class="gallery-tabs">
+          <button class="gtab active" onclick="filterGallery('all', this)">Все</button>
+          <button class="gtab" onclick="filterGallery('office', this)">Офисы</button>
+          <button class="gtab" onclick="filterGallery('trade', this)">Торговые</button>
+          <button class="gtab" onclick="filterGallery('land', this)">Земельные участки</button>
+          <button class="gtab" onclick="filterGallery('common', this)">Инфраструктура</button>
+        </div>
+        <div class="gallery-grid" id="galleryGrid">
+          <div class="gallery-item" data-cat="office" onclick="openModal(this)">
+            <div class="gallery-img" style="background:linear-gradient(135deg,#1e3a5f,#2563ab)">
+              <span class="gallery-placeholder">🏢</span>
+            </div>
+            <div class="gallery-caption">Офис</div>
+          </div>
+          <div class="gallery-item" data-cat="trade" onclick="openModal(this)">
+            <div class="gallery-img" style="background:linear-gradient(135deg,#2d6a1a,#4db82a)">
+              <span class="gallery-placeholder">🏪</span>
+            </div>
+            <div class="gallery-caption">Торговый зал, 20 м², 1-й этаж</div>
+          </div>
+          <div class="gallery-item" data-cat="land" onclick="openModal(this)">
+            <div class="gallery-img" style="background:linear-gradient(135deg,#2a5a1a,#5ab030)">
+              <span class="gallery-placeholder">🏔</span>
+            </div>
+            <div class="gallery-caption">Земельный участок произв. назначения, 1 000 м²</div>
+          </div>
+          <div class="gallery-item" data-cat="common" onclick="openModal(this)">
+            <div class="gallery-img" style="background:linear-gradient(135deg,#1a4a6b,#2896c8)">
+              <span class="gallery-placeholder">🚚</span>
+            </div>
+            <div class="gallery-caption">Парковка</div>
+          </div>
+          <div class="gallery-item" data-cat="land" onclick="openModal(this)">
+            <div class="gallery-img" style="background:linear-gradient(135deg,#3a5a0a,#7ab030)">
+              <span class="gallery-placeholder">🌎</span>
+            </div>
+            <div class="gallery-caption">Территория с въездом для техники</div>
+          </div>
+          <div class="gallery-item" data-cat="office" onclick="openModal(this)">
+            <div class="gallery-img" style="background:linear-gradient(135deg,#1e3060,#3060c0)">
+              <span class="gallery-placeholder">🏢</span>
+            </div>
+            <div class="gallery-caption">Здание</div>
+          </div>
+        </div>
+      </div>
+      <div id="galleryModal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+          <button class="modal-close" onclick="closeModal()">✕</button>
+          <div id="modalImg" class="modal-img"></div>
+          <div id="modalCaption" class="modal-caption"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== АРЕНДА ПОМЕЩЕНИЙ (МАГАЗИН) ===== -->
+    <section id="shop" class="page">
+      <div class="container">
+        <h2 class="section-title">Аренда помещений</h2>
+        <p class="section-desc">Выберите подходящее помещение и оставьте заявку — свяжемся в течение часа</p>
+
+        <div class="shop-grid" id="shopGrid">
+
+          <div class="shop-card" data-cat="office">
+            <div class="shop-img-block office-bg">
+              <div class="shop-type-badge">Офис</div>
+              <span class="shop-emoji">🏢</span>
+            </div>
+            <div class="shop-info">
+              <h3>Офис 101</h3>
+              <button class="btn-cart" onclick="addToCart('Офис 101', 0)">Оставить заявку</button>
+            </div>
+          </div>
+
+          <div class="shop-card" data-cat="office">
+            <div class="shop-img-block office-bg">
+              <div class="shop-type-badge">Офис</div>
+              <span class="shop-emoji">🏢</span>
+            </div>
+            <div class="shop-info">
+              <h3>Офис 205</h3>
+              <button class="btn-cart" onclick="addToCart('Офис 205', 0)">Оставить заявку</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Корзина / Заявки -->
+        <div class="cart-block" id="cartBlock" style="display:none">
+          <h3>📋 Ваши заявки на аренду</h3>
+          <p class="cart-note">После отправки мы свяжемся с вами в течение суток для подтверждения и оформления договора.</p>
+          <div id="cartItems"></div>
+          <div class="cart-total">Итого в месяц: <span id="cartTotal">0</span> ₽</div>
+          <div class="cart-form">
+            <input type="text" id="clientName" placeholder="Ваше имя">
+            <input type="tel" id="clientPhone" placeholder="Номер телефона">
+            <input type="text" id="clientCompany" placeholder="Название компании (необязательно)">
+          </div>
+          <div class="cart-actions">
+            <button class="btn-primary" onclick="checkout()">Отправить заявку</button>
+            <button class="btn-outline" onclick="clearCart()">Очистить</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== ЗЕМЕЛЬНЫЙ УЧАСТОК ===== -->
+    <section id="land" class="page">
+      <div class="hero hero-land">
+        <div class="hero-content">
+          <div class="hero-badge">Производственное назначение · п. Разумное</div>
+          <h1>Аренда земельных участков<br>производственного назначения</h1>
+          <p>Участки с коммуникациями на границе и удобным въездом для техники</p>
+          <div class="hero-btns">
+            <button class="btn-primary" onclick="document.getElementById('landForm').scrollIntoView({behavior:'smooth'})">Оставить заявку</button>
+            <button class="btn-ghost" onclick="document.getElementById('landObjects').scrollIntoView({behavior:'smooth'})">Смотреть участки</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <!-- Преимущества участков -->
+        <div class="features-block">
+          <h2 class="section-title">Условия аренды участков</h2>
+          <p class="section-desc">По договорённости.</p>
+        </div>
+
+        <!-- Доступные участки -->
+        <div id="landObjects" style="margin-bottom:50px">
+          <h2 class="section-title">Доступные участки</h2>
+          <p class="section-desc">Все участки находятся на охраняемой территории в п. Разумное, Белгородский район</p>
+          <div class="land-grid">
+
+            <div class="land-card">
+              <div class="land-card-header" style="background:linear-gradient(135deg,#1a4a20,#2d8a40)">
+                <div class="land-badge">Свободен</div>
+                <span class="land-icon">🏔</span>
+              </div>
+              <div class="land-body">
+                <h3>Земельный участок</h3>
+                <button class="btn-cart" onclick="addToCart('Земельный участок', 0)">Оставить заявку</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Форма заявки на участок -->
+        <div id="landForm" class="land-form-block">
+          <h2 class="section-title">Оставить заявку на аренду участка</h2>
+          <p class="section-desc">Опишите ваши требования — подберём подходящий участок и свяжемся с вами в течение рабочего дня</p>
+          <div class="land-form">
+            <input type="text" id="landName" placeholder="Ваше имя / Название компании">
+            <input type="tel" id="landPhone" placeholder="Номер телефона">
+            <select id="landPurpose">
+              <option value="">— Цель использования —</option>
+              <option>Производство и переработка</option>
+              <option>Строительство склада</option>
+              <option>Размещение оборудования</option>
+              <option>Строительство здания</option>
+              <option>Другое</option>
+            </select>
+            <textarea id="landComment" placeholder="Дополнительные пожелания (коммуникации, срок аренды, прочее)" rows="3"></textarea>
+            <div></div>
+            <button class="btn-primary btn-land-submit" onclick="submitLandForm()">Отправить заявку</button>
+          </div>
+        </div>
+
+        <!-- Корзина участков -->
+        <div class="cart-block" id="cartBlock" style="display:none">
+          <h3>📋 Ваши заявки</h3>
+          <p class="cart-note">После отправки мы свяжемся с вами в течение 1 рабочего часа.</p>
+          <div id="cartItems"></div>
+          <div class="cart-actions" style="margin-top:16px">
+            <button class="btn-outline" onclick="clearCart()">Очистить заявки</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== ПРОЧИЕ УСЛУГИ ===== -->
+    <section id="other" class="page">
+      <div class="hero" style="min-height:220px">
+        <div class="hero-content">
+          <h1>Прочие услуги</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">🚙</div>
+            <h3>Транспортные услуги</h3>
+            <p>В разработке.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🔧</div>
+            <h3>Техническое обслуживание и ремонт</h3>
+            <p>В разработке.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🧹</div>
+            <h3>Клининговые услуги</h3>
+            <p>В разработке.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🛡</div>
+            <h3>Установка систем безопасности</h3>
+            <p>В разработке.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>ООО «УКЖФР»</h4>
+        <p>Управление нежилыми зданиями и аренда коммерческих помещений</p>
+        <p>ОГРН: 0000000000000</p>
+        <p>ИНН: 000000000</p>
+      </div>
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <p>📍 Белгородская область, Белгородский район, п. Разумное</p>
+        <p>📞 +7 (4722) 00-00-00</p>
+        <p>✉ info@ukzhfr.ru</p>
+        <p>⌛ Пн–Пт: 9:00–18:00, Сб: 10:00–15:00</p>
+      </div>
+      <div class="footer-col">
+        <h4>Навигация</h4>
+        <ul>
+          <li><a onclick="showPage('home')">Главная</a></li>
+          <li><a onclick="showPage('news')">Новости</a></li>
+          <li><a onclick="showPage('services')">Услуги</a></li>
+          <li><a onclick="showPage('proposals')">Предложения</a></li>
+          <li><a onclick="showPage('gallery')">Фотогалерея</a></li>
+          <li><a onclick="showPage('shop')">Аренда помещений</a></li>
+          <li><a onclick="showPage('land')">Земельный участок</a></li>
+          <li><a onclick="showPage('other')">Прочие услуги</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Свободные объекты</h4>
+        <div class="footer-avail">
+          <div class="avail-item"><span>Офисы</span><span class="avail-num">4 объекта</span></div>
+          <div class="avail-item"><span>Торговые</span><span class="avail-num">2 объекта</span></div>
+          <div class="avail-item"><span>Земельные участки</span><span class="avail-num">3 участка</span></div>
+        </div>
+        <button class="btn-footer" onclick="showPage('shop')">Смотреть все →</button>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 ООО «УКЖФР». Все права защищены. | Управление нежилыми зданиями и аренда помещений, п. Разумное, Белгородская обл.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body></html>
